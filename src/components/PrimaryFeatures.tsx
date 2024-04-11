@@ -80,7 +80,7 @@ export function PrimaryFeatures() {
                     <div
                       key={feature.title}
                       className={clsx(
-                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
+                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-10',
                         selectedIndex === featureIndex
                           ? 'bg-white lg:bg-white'
                           : 'hover:bg-white/30 lg:hover:bg-white/20',
