@@ -24,6 +24,7 @@ export default {
       colors: {
         'rlb-yellow': '#FBF315',
         'black-default': '#373737',
+        'black-light': '#666666',
       },
       borderRadius: {
         '4xl': '2rem',
