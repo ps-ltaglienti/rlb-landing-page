@@ -6,36 +6,28 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import zeitreiseMobile from '../images/screenshots/zeitreise-mobile.svg'
+import feedbackMobile from '../images/screenshots/feedback-mobile.svg'
+import spielMobile from '../images/screenshots/spiel-mobile.svg'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Zeitreise',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      'Du reist in die Vergangenheit ohne den genauen Zeitpunkt zu wissen.',
+    image: spielMobile,
   },
   {
-    title: 'Claim expenses',
+    title: 'Das Spiel',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      'Du erlebst Spiel für Spiel neue und reale Anlagesituationen und triffst Entscheidungen.',
+    image: spielMobile,
   },
   {
-    title: 'VAT handling',
+    title: 'Feedback und Spielanalyse',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'Du erhältst Feedback zu deinem Spiel und eine Analyse deiner Ergebnisse.',
+    image: spielMobile,
   },
 ]
 
@@ -63,22 +55,14 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      className="bg-rlb-yellow relative overflow-hidden pb-28 pt-20 sm:py-32"
     >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl">
             Everything you need to run your books.
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
+          <p className="mt-6 text-lg tracking-tight">
             Well everything you need if you aren’t that picky about minor
             details like tax compliance.
           </p>
@@ -90,57 +74,42 @@ export function PrimaryFeatures() {
         >
           {({ selectedIndex }) => (
             <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-7">
+                <Tab.List className="relative z-10 flex w-full gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
                       className={clsx(
                         'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
                         selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
-                          : 'hover:bg-white/10 lg:hover:bg-white/5',
+                          ? 'bg-white lg:bg-white'
+                          : 'hover:bg-white/30 lg:hover:bg-white/20',
                       )}
                     >
                       <h3>
-                        <Tab
-                          className={clsx(
-                            'font-display text-lg ui-not-focus-visible:outline-none',
-                            selectedIndex === featureIndex
-                              ? 'text-blue-600 lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white',
-                          )}
-                        >
+                        <Tab className="font-display text-lg ui-not-focus-visible:outline-none">
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
                           {feature.title}
                         </Tab>
                       </h3>
-                      <p
-                        className={clsx(
-                          'mt-2 hidden text-sm lg:block',
-                          selectedIndex === featureIndex
-                            ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white',
-                        )}
-                      >
+                      <p className="mt-2 hidden text-sm lg:block">
                         {feature.description}
                       </p>
                     </div>
                   ))}
                 </Tab.List>
               </div>
-              <Tab.Panels className="lg:col-span-7">
+              <Tab.Panels className="lg:col-span-5">
                 {features.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
-                      <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
+                      <p className="relative mx-auto max-w-2xl text-base sm:text-center">
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 flex w-full justify-center overflow-hidden sm:w-auto lg:mt-0 lg:w-[67.8125rem] lg:justify-start">
                       <Image
-                        className="w-full"
+                        className="h-full"
                         src={feature.image}
                         alt=""
                         priority
