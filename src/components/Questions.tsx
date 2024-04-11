@@ -1,11 +1,4 @@
-import Image from 'next/image'
-
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
 
 const testimonials = [
   [
@@ -84,12 +77,10 @@ export function Questions() {
         </ul>
 
         <div className="mx-auto mt-12 max-w-2xl md:text-center">
-          <p className="mb-4 text-lg tracking-tight ">
+          <p className="mb-4 text-[17px]">
             Wenn du mehr wissen möchtest kontaktiere uns gerne
           </p>
-          <a className="text-lg uppercase tracking-tight">
-            Zum Kontaktformular
-          </a>
+          <a className="text-lg font-semibold uppercase">Zum Kontaktformular</a>
         </div>
       </Container>
     </section>

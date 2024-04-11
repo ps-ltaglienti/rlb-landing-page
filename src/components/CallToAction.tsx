@@ -2,36 +2,34 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
+
+import avatarHoldingPhone from '@/images/avatars/avatar-holding-phone.svg'
 
 export function CallToAction() {
   return (
-    <section
-      id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-32"
-    >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
-        src={backgroundImage}
-        alt=""
-        width={2347}
-        height={1244}
-        unoptimized
-      />
-      <Container className="relative">
-        <div className="mx-auto max-w-lg text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can
-            feel like you’re doing something productive.
-          </p>
-          <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
-          </Button>
-        </div>
-      </Container>
+    <section id="call-to-action" className="relative h-0">
+      <div className="absolute w-full overflow-hidden">
+        <Container className="relative flex flex-col items-center justify-center">
+          <Image
+            className="relative -bottom-[19px] h-36 md:-bottom-[23px] md:left-14 md:h-44 lg:-bottom-[30px] lg:left-28 lg:h-auto"
+            src={avatarHoldingPhone}
+            alt=""
+            priority
+          />
+          <div className="bg-black-default flex max-w-[1060px] flex-col justify-between gap-8 rounded-md px-8 py-6 text-white lg:flex-row lg:px-14 lg:py-12">
+            <div className="flex flex-col gap-4">
+              <h3>Bereit den Markt zu erobern?</h3>
+              <p>
+                Mit fit2invest bekommst du ein gutes Gefühl für Chancen und
+                Risiken bei Veranlagungen.
+              </p>
+            </div>
+            <Button href="/register" color="yellow">
+              Jetzt spielen
+            </Button>
+          </div>
+        </Container>
+      </div>
     </section>
   )
 }
