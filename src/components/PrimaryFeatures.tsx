@@ -15,7 +15,7 @@ const features = [
     title: 'Zeitreise',
     description:
       'Du reist in die Vergangenheit ohne den genauen Zeitpunkt zu wissen.',
-    image: spielMobile,
+    image: zeitreiseMobile,
   },
   {
     title: 'Das Spiel',
@@ -27,7 +27,7 @@ const features = [
     title: 'Feedback und Spielanalyse',
     description:
       'Du erhältst Feedback zu deinem Spiel und eine Analyse deiner Ergebnisse.',
-    image: spielMobile,
+    image: feedbackMobile,
   },
 ]
 
@@ -55,7 +55,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="bg-rlb-yellow relative overflow-hidden pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden bg-rlb-yellow pb-28 pt-20 sm:py-32"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
