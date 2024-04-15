@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  h2 {
+    @apply text-[41px];
+    @apply leading-[57px];
+    @apply font-bold;
+  }
+
   h3 {
     @apply text-[26px];
     @apply leading-[36px];
