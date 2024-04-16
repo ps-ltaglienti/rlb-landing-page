@@ -55,6 +55,9 @@ export function DataNumbers() {
               </div>
             ))}
           </div>
+          <p className="text-rlb-gray w-full py-8 text-center text-sm">
+            Nachfolgende Daten: Stand vom 01.01.2024
+          </p>
         </Container>
       </section>
     </>
