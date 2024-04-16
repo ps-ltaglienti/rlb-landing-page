@@ -33,14 +33,13 @@ export function SecondaryFeatures() {
   return (
     <section
       id="secondary-features"
-      aria-label="Features for simplifying everyday business tasks"
       className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2>Ausprobieren zahlt sich aus</h2>
         </div>
-        <div className="divide-rlb-black-default mt-20 grid grid-rows-3 divide-y-2 px-4 lg:grid-cols-3 lg:divide-x-2 lg:divide-y-0">
+        <div className="divide-rlb-black-default mt-20 grid grid-rows-3 divide-y-2 px-4 lg:grid-cols-3 lg:grid-rows-none lg:divide-x-2 lg:divide-y-0">
           {features.map((feature) => (
             <div
               key={feature.description}
