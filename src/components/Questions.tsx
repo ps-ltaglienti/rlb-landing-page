@@ -45,7 +45,7 @@ export function Questions() {
     <section
       id="questions"
       aria-label="What our customers are saying"
-      className="bg-rlb-yellow py-20 sm:py-32"
+      className="bg-rlb-yellow pb-96 pt-20 sm:pt-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">

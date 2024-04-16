@@ -20,7 +20,6 @@ export default function Home() {
         <DataNumbers />
         <Questions />
         <CallToAction />
-        <Footer />
       </main>
       <Footer />
     </>

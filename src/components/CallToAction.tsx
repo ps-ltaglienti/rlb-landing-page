@@ -8,7 +8,7 @@ import avatarHoldingPhone from '@/images/avatars/avatar-holding-phone.svg'
 export function CallToAction() {
   return (
     <section id="call-to-action" className="relative h-0">
-      <div className="absolute w-full overflow-hidden">
+      <div className="absolute w-full -translate-y-3/4 overflow-hidden">
         <Container className="relative flex flex-col items-center justify-center">
           <Image
             className="relative -bottom-[19px] h-36 md:-bottom-[23px] md:left-14 md:h-44 lg:-bottom-[30px] lg:left-28 lg:h-auto"
