@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-
 import reiffeisenLogo from '@/images/icons/reiffeisen-logo.svg'
 import uniGrazLogo from '@/images/icons/uni-graz-logo.svg'
 
@@ -23,18 +22,21 @@ export function Presentation() {
         ankommt.
       </p>
       <div className="mt-10 flex flex-col items-center justify-center gap-6 lg:flex-row">
-        <Image
-          className="h-11 "
-          src={reiffeisenLogo}
-          alt="reiffeisen-logo"
-          priority
-        />
-        <Image
-          className="h-11"
-          src={uniGrazLogo}
-          alt="uni-graz-logo"
-          priority
-        />
+        <div className="flex flex-row items-center justify-center gap-6">
+          <Image
+            className="h-11"
+            src={reiffeisenLogo}
+            alt="reiffeisen-logo"
+            priority
+          />
+          <Image
+            className="h-11"
+            src={uniGrazLogo}
+            alt="uni-graz-logo"
+            priority
+          />
+        </div>
+
         <span className="text-sm">
           Powered by Raiffeisen-Landesbank AG | In Kooperation mit der
           Universität Graz

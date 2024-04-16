@@ -1,4 +1,5 @@
 import { CallToAction } from '@/components/CallToAction'
+import { Comments } from '@/components/Comments'
 import { DataNumbers } from '@/components/DataNumbers'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -19,6 +20,7 @@ export default function Home() {
         <PrimaryFeatures />
         <Preview />
         <SecondaryFeatures />
+        <Comments />
         <DataNumbers />
         <Questions />
         <CallToAction />
