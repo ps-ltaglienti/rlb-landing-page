@@ -3,19 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  h1 {
+    @apply text-[52px];
+    @apply leading-[72px];
+    @apply font-semibold;
+  }
   h2 {
     @apply text-[41px];
     @apply leading-[57px];
-    @apply font-bold;
+    @apply font-semibold;
   }
 
   h3 {
     @apply text-[26px];
     @apply leading-[36px];
-    @apply font-bold;
+    @apply font-semibold;
   }
   h4 {
     @apply text-xl;
-    @apply font-bold;
+    @apply font-semibold;
   }
 }

@@ -49,7 +49,7 @@ export function Questions() {
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight sm:text-4xl">
+          <h2 className="text-3xl tracking-tight sm:text-4xl">
             Hast du noch Fragen?
           </h2>
         </div>

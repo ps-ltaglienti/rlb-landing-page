@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 export function Hero() {
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight sm:text-7xl">
+      <h1 className="mx-auto max-w-4xl">
         Mit fit2invest spielend einfach Börsenerfahrung sammeln
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight">

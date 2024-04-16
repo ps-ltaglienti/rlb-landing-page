@@ -78,7 +78,7 @@ export function PrimaryFeatures() {
                       )}
                     >
                       <h3>
-                        <Tab className="font-display text-lg ui-not-focus-visible:outline-none">
+                        <Tab className="text-lg ui-not-focus-visible:outline-none">
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
                           {feature.title}
                         </Tab>
