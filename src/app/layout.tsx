@@ -1,4 +1,4 @@
-import { Inter, Lexend } from 'next/font/google'
+import { Open_Sans, Roboto_Mono } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -13,16 +13,16 @@ export const metadata: Metadata = {
     'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
 }
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-opensans',
 })
 
-const lexend = Lexend({
+const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-lexend',
+  variable: '--font-roboto-mono',
 })
 
 export default function RootLayout({
@@ -32,11 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="de"
       className={clsx(
         'text-rlb-black-default h-full scroll-smooth bg-white antialiased',
-        inter.variable,
-        lexend.variable,
+        openSans.variable,
+        robotoMono.variable,
       )}
     >
       <body className="flex h-full flex-col">{children}</body>
