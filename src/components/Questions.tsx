@@ -65,7 +65,7 @@ export function Questions() {
                     <figure className="relative rounded-md bg-white p-6">
                       <h4 className="mb-4">{testimonial.title}</h4>
 
-                      <p className="text-black-light text-[17px]">
+                      <p className="text-rlb-gray text-[17px]">
                         {testimonial.content}
                       </p>
                     </figure>

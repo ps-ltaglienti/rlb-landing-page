@@ -8,7 +8,7 @@ export function Preview() {
     <section
       id="preview"
       aria-label="Check the interface"
-      className="py-20 sm:py-32"
+      className="bg-rlb-gray-light py-20 sm:py-32 "
     >
       <div className="ml-auto max-w-none pl-4 sm:pl-6 lg:pl-8">
         <div className="mt-16 grid grid-cols-1 items-center gap-x-6 gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pl-20 lg:pt-0">

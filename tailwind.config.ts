@@ -23,8 +23,9 @@ export default {
     extend: {
       colors: {
         'rlb-yellow': '#FBF315',
-        'black-default': '#373737',
-        'black-light': '#666666',
+        'rlb-black-default': '#373737',
+        'rlb-gray': '#666666',
+        'rlb-gray-light': '#f4f4f4',
       },
       borderRadius: {
         '4xl': '2rem',

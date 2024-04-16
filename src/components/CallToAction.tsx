@@ -16,7 +16,7 @@ export function CallToAction() {
             alt=""
             priority
           />
-          <div className="bg-black-default flex max-w-[1060px] flex-col justify-between gap-8 rounded-md px-8 py-6 text-white lg:flex-row lg:px-14 lg:py-12">
+          <div className="bg-rlb-black-default flex max-w-[1060px] flex-col justify-between gap-8 rounded-md px-8 py-6 text-white lg:flex-row lg:px-14 lg:py-12">
             <div className="flex flex-col gap-4">
               <h3>Bereit den Markt zu erobern?</h3>
               <p>
