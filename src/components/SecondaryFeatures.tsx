@@ -14,7 +14,7 @@ interface Feature {
 const features: Array<Feature> = [
   {
     name: 'Realistische Daten',
-    description: 'Erlebe echte historische Anlagesituationen',
+    description: 'Erlebe immer wieder aufs Neue, echte Anlagesituationen',
     icon: dataIcon,
   },
   {

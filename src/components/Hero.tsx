@@ -13,9 +13,7 @@ export function Hero() {
         Börse.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register" color="yellow">
-          Jetzt spielen
-        </Button>
+        <Button href="/register">Jetzt spielen</Button>
       </div>
     </Container>
   )

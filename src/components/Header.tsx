@@ -93,9 +93,7 @@ function MobileNavigation() {
             <MobileNavLink href="#pricing">Feedback</MobileNavLink>
             <MobileNavLink href="#pricing">FAQ</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <Button href="/register" color="yellow">
-              Jetzt spielen
-            </Button>
+            <Button href="/register">Jetzt spielen</Button>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -126,11 +124,7 @@ export function Header() {
               <NavLink href="#pricing">Feedback</NavLink>
               <NavLink href="#pricing">FAQ</NavLink>
             </div>
-            <Button
-              href="/register"
-              className="hidden lg:inline"
-              color="yellow"
-            >
+            <Button href="/register" className="hidden lg:inline">
               Jetzt spielen
             </Button>
             <div className="-mr-1 lg:hidden">

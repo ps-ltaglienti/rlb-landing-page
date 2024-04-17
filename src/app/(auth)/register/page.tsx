@@ -76,12 +76,7 @@ export default function Register() {
           <option>The “Never Use This” podcast</option>
         </SelectField>
         <div className="col-span-full">
-          <Button
-            type="submit"
-            variant="solid"
-            color="yellow"
-            className="w-full"
-          >
+          <Button type="submit" className="w-full">
             <span>
               Sign up <span aria-hidden="true">&rarr;</span>
             </span>

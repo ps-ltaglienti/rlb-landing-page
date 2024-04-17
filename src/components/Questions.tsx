@@ -17,7 +17,7 @@ const testimonials = [
     {
       title: 'Was passiert, wenn ich im Spiel Geld verliere?',
       content:
-        'Verluste im Spiel haben keine realen finanziellen Auswirkungen. Sie dienen als Lernchance, um Strategien zu überdenken und aus Fehlentscheidungen zu lernen. fit2invest ermutigt Spieler:innen, verschiedene Ansätze auszuprobieren und das Gelernte in zukünftigen Szenarien anzuwenden.',
+        'Verluste und Gewinne im Spiel haben keine realen finanziellen Auswirkungen. Sie dienen als Lernchance, um Strategien zu überdenken und aus Fehlentscheidungen zu lernen. fit2invest ermutigt Spieler:innen, verschiedene Ansätze auszuprobieren und das Gelernte in zukünftigen Szenarien anzuwenden.',
     },
     {
       title: 'Kann ich bei fit2invest echtes Geld investieren oder gewinnen?',

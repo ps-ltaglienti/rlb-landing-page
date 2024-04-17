@@ -24,9 +24,7 @@ export function CallToAction() {
                 Risiken bei Veranlagungen.
               </p>
             </div>
-            <Button href="/register" color="yellow">
-              Jetzt spielen
-            </Button>
+            <Button href="/register">Jetzt spielen</Button>
           </div>
         </Container>
       </div>
