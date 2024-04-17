@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </nav>
 
-        <nav className="flex w-full flex-col items-start gap-2 pt-20 lg:flex-row lg:justify-center lg:gap-8">
+        <nav className="flex w-full flex-col items-center gap-2 pt-20 lg:flex-row lg:justify-center lg:gap-8">
           <NavLink href="#" className="text-xl">
             Datenschutz
           </NavLink>

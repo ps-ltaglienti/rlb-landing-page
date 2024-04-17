@@ -85,13 +85,11 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#features">Das Spiel</MobileNavLink>
-            <MobileNavLink href="#testimonials">
-              Dein Trainingsbereich
-            </MobileNavLink>
-            <MobileNavLink href="#pricing">Vorteile</MobileNavLink>
-            <MobileNavLink href="#pricing">Feedback</MobileNavLink>
-            <MobileNavLink href="#pricing">FAQ</MobileNavLink>
+            <MobileNavLink href="#das-spiel">Das Spiel</MobileNavLink>
+            <MobileNavLink href="#preview">Dein Trainingsbereich</MobileNavLink>
+            <MobileNavLink href="#secondary-features">Vorteile</MobileNavLink>
+            <MobileNavLink href="#comments">Feedback</MobileNavLink>
+            <MobileNavLink href="#questions">FAQ</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <Button href="/register">Jetzt spielen</Button>
           </Popover.Panel>
@@ -110,19 +108,14 @@ export function Header() {
             <Link href="#" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
-            {/* <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div> */}
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden lg:flex lg:gap-x-6">
-              <NavLink href="#features">Das Spiel</NavLink>
-              <NavLink href="#testimonials">Dein Trainingsbereich</NavLink>
-              <NavLink href="#pricing">Vorteile</NavLink>
-              <NavLink href="#pricing">Feedback</NavLink>
-              <NavLink href="#pricing">FAQ</NavLink>
+              <NavLink href="#das-spiel">Das Spiel</NavLink>
+              <NavLink href="#preview">Dein Trainingsbereich</NavLink>
+              <NavLink href="#secondary-features">Vorteile</NavLink>
+              <NavLink href="#comments">Feedback</NavLink>
+              <NavLink href="#questions">FAQ</NavLink>
             </div>
             <Button href="/register" className="hidden lg:inline">
               Jetzt spielen

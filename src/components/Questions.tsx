@@ -15,7 +15,8 @@ const testimonials = [
   ],
   [
     {
-      title: 'Was passiert, wenn ich im Spiel Geld verliere?',
+      title:
+        'Was passiert im Spiel, wenn die Kurse an den Börsen steigen oder sinken?',
       content:
         'Verluste und Gewinne im Spiel haben keine realen finanziellen Auswirkungen. Sie dienen als Lernchance, um Strategien zu überdenken und aus Fehlentscheidungen zu lernen. fit2invest ermutigt Spieler:innen, verschiedene Ansätze auszuprobieren und das Gelernte in zukünftigen Szenarien anzuwenden.',
     },
@@ -32,10 +33,9 @@ const testimonials = [
         'Die Simulationen in fit2invest basieren auf realen Marktprinzipien und historischen Daten, um eine möglichst authentische Lernerfahrung zu bieten. Sie sind vereinfacht, um das Lernen zu erleichtern, reflektieren aber realistische Marktbedingungen und bieten eine solide Grundlage für das Verständnis von Veranlagungskonzepten.',
     },
     {
-      title:
-        'Wie fange ich an zu spielen und was sind die ersten Schritte in fit2invest?',
+      title: 'Wie fange ich an zu spielen und was sind die nächsten Schritte?',
       content:
-        'Registriere dich einfach für ein kostenloses Konto auf der fit2invest Website und durchlaufe das interaktive Tutorial, das dir die Grundlagen des Spiels näherbringt. Danach kannst du direkt in die Börsenwelt eintauchen und deine Fähigkeiten unter realistischen Bedingungen spielerisch verbessern.',
+        'Starte das Spiel und nach einem kurzen interaktiven Tutorial, das dir die Grundlagen des Spiels näherbringt, geht die Reise los. Du tauchst direkt in die Börsenwelt ein und kannst deine Fähigkeiten unter realistischen Bedingungen spielerisch verbessern. Registriere dich am Ende des ersten Spiels für den kostenlosen Trainingsbereich, dort kannst du deine finanzielle Fitness laufend verbessern.',
     },
   ],
 ]
