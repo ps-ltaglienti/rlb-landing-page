@@ -39,7 +39,7 @@ export function SecondaryFeatures() {
         <div className="mx-auto max-w-2xl md:text-center">
           <h2>Ausprobieren zahlt sich aus</h2>
         </div>
-        <div className="divide-rlb-black-default mt-20 grid grid-rows-3 divide-y-2 px-4 lg:grid-cols-3 lg:grid-rows-none lg:divide-x-2 lg:divide-y-0">
+        <div className="mt-20 grid grid-rows-3 divide-y-2 divide-rlb-black-default px-4 lg:grid-cols-3 lg:grid-rows-none lg:divide-x-2 lg:divide-y-0">
           {features.map((feature) => (
             <div
               key={feature.description}
